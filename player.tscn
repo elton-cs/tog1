@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://2etgyc22jp4d"]
+
+[ext_resource type="Texture2D" uid="uid://cah5cb4025wpu" path="res://assets/Character_animation/priests_idle/priest1/v1/priest1_v1_1.png" id="1_p0cq1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3t5u"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_p0cq1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.75, 0.75)
+shape = SubResource("RectangleShape2D_e3t5u")
